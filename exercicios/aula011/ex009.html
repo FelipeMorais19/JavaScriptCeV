@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embaixada</title>
+</head>
+<body>
+    <h1>Sistema de cidadania</h1>
+    Onde você nasceu ? <input type="text" name="txtnasc" id="txtnasc">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function verificar(){
+            var txtnasc = document.querySelector('input#txtnasc')
+            var res = document.querySelector('div#res')
+            if (txtnasc.value != 'Brasil'){
+                res.innerHTML = `<p>Você é <strong>Estrangeiro</strong>!</p>`
+            }
+            else{
+                res.innerHTML = `<p>Você é <strong>Brasileiro</strong>!</p>`
+            }
+
+            res.innerHTML += `<p>Bem vindo ao país!</p>`
+        }
+    </script>
+</body>
+</html>
