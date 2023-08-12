@@ -1,0 +1,7 @@
+- functions
+- objetos
+- modularização
+- regEx
+- json
+- ajax
+- nodeJS
